@@ -1,16 +1,106 @@
-html,
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@200;300;400;500;600&family=Quantico&family=Sen&display=swap');
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+/*------------ CSS for index.js ---------------*/
+
+
+.mainphoto-wrapper {
+    width: 100%;
 }
 
-* {
-  box-sizing: border-box;
+.mainPhoto{
+z-index: 0;
+height: 100%;
+width: 100%;
+}
+
+/*------------- CSS for primary buttons ---------------*/
+
+.button-container{
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+}
+
+.moreButton {
+background-color: rgba(151, 112, 69, 1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+border: none;
+color: #ffffff;
+font-family: Poppins;
+font-weight: 500;
+width: 148px;
+height: 36px;
+font-size: 14px;
+line-height: 18px;
+}
+
+.bookButton {
+background-color: rgba(151, 112, 69, 1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+border: none;
+color: #ffffff;
+font-family: Poppins;
+font-weight: 500;
+width: 134px;
+height: 36px;
+font-size: 14px;
+line-height: 18px;
+}
+
+/*------------- CSS for cards ---------------*/
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Poppins;
+    font-weight: 400;
+    color: #373737;
+    font-size: 20px;
+    margin-left: 44px;
+    margin-bottom: 0px;
+}
+
+.yellowLine {
+    background-color: rgba(235, 180, 94, 1);
+    height: 3px;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: Poppins;
+    font-weight: 400;
+    color: #373737;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-bottom: 24px;
+}
+
+.readMore-button {
+    align-self: center;
+    background-color: rgba(235, 180, 94, 1);
+    width: 148px;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    width: 148px;
+    height: 36px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
 }

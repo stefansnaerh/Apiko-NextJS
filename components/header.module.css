@@ -1,0 +1,64 @@
+
+
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 90px;
+    width: 100%;
+    background-color: #FCF2EA;
+    z-index: 1;
+    position: relative;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-left: -5px;
+}
+
+.apikoContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 75px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left:-15px;
+}
+
+.apiko {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: -10px;
+    align-self: center;
+}
+
+.apikoSub {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8px;
+    letter-spacing: 0.5px;
+}
+
+.navbarContainer {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 19px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 43px;
+    height: 2px;
+    background-color: #404040;
+    margin: 10px 0;
+  }
+
+
+
