@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@200;300;400;500;600&family=Quantico&family=Sen&display=swap');
+
+.contactContainer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.yellowline{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(235, 180, 94, 1);
+    height: 3px;
+    width: 75%;
+}
+
+.contactText {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: #373737;
+    text-align:center;
+    margin-left: 44px;
+    margin-right: 44px;
+}
+
+.contactButton {
+    background-color: rgba(151, 112, 69, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 500;
+    width: 148px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    column-gap: -10px;
+    align-items: center;
+    height: 110px;
+    background-color: #FCF2EA;
+}
+
+.footerText {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    color: #373737;
+    margin: 10px;
+}
