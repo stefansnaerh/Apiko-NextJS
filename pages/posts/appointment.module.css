@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@200;300;400;500;600&family=Quantico&family=Sen&display=swap');
+
+
+.appointmentContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 44px;
+    margin-right: 44px;
+
+}
+
+.headline {
+    font-family: Poppins;
+    color: #373737;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+.yellowline{
+    margin-bottom: 10px;
+    background-color: rgba(235, 180, 94, 1);
+    height: 3px;
+    width: 100%;
+}
+
+.list {
+    font-family: Poppins;
+    color: #373737;
+    font-size: 14px;
+}
+
+.subHeadline {
+    font-family: Poppins;
+    color: #373737;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-bottom: 3px;
+}
+
+.mainText {
+    font-family: Poppins;
+    color: #373737;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*------------------------  CSS for form ---------------------*/
+
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+
+.input {
+    height: 32px;
+    border: 1px solid #8A8A8A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #6F6F6F;
+    padding-left: 10px;
+}
+
+.inputBig {
+    height: 100px;
+    border: 1px solid #8A8A8A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+    font-family: Poppins;
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: initial;
+}
+
+.sendButton { 
+    background-color: rgba(151, 112, 69, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 500;
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    line-height: 18px; 
+    transition-duration: 0.4s;     
+}
+
+.sendButton:hover {
+    background-color: #B58F65;
+}
+
+.sendButton:active {
+    background-color: #58442f;
+}
+

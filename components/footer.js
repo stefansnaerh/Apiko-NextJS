@@ -13,7 +13,7 @@ export default function Footer() {
       <footer className={styles.footerContainer}>
           <h4 className={styles.footerText}>Apiko ehf. kt. 100586-2589</h4>
           <h4 className={styles.footerText}>Grófarsmári 26, 201 kópavogur</h4>
-          <h4 className={styles.footerText}>692-7094      |   apiko@apiko.is</h4>
+          <h4 className={styles.footerText}>692-7094 | apiko@apiko.is</h4>
       </footer>
       </section>
     )

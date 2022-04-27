@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import mainImage from '../public/images/mainphoto.jpg'
+import mainImage from '../public/images/toothbrushPhone.jpg'
 import aboutImage from '../public/images/about.jpg'
 import specialistsImage from '../public/images/specialists.jpg'
+
 
 export default function Home() {
 
@@ -48,7 +50,9 @@ export default function Home() {
         </div>
         <div className='button-container'>
           <button className='moreButton' type='button'>Nánar um Apiko</button>
+          <Link href='/posts/appointment' passHref>
           <button className='bookButton' type='button'>Bóka tíma</button>
+          </Link>
         </div>
         <div className='card-container'>
         <h1>Um Apiko</h1>
