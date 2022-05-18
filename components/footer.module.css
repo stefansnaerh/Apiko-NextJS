@@ -8,12 +8,26 @@
     margin-top: 30px;
     margin-bottom: 50px;
 }
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .yellowline{
     margin-top: 30px;
     margin-bottom: 10px;
     background-color: rgba(235, 180, 94, 1);
     height: 3px;
     width: 75%;
+    max-width: 400px;
+}
+.yellowline1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(235, 180, 94, 1);
+    height: 3px;
+    width: 75%;
+    max-width: 400px;
 }
 
 .contactText {
@@ -24,7 +38,42 @@
     text-align:center;
     margin-left: 44px;
     margin-right: 44px;
+    max-width: 400px;
 }
+
+.phoneButton {
+    background-color: rgba(151, 112, 69, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 500;
+    width: 148px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.phoneButton p {
+    align-self: center;
+    flex-direction: column;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.phoneButton:hover {
+    background-color: #B58F65;
+}
+
+.phoneButton:active {
+    background-color: #58442f;
+}
+
 
 .contactButton {
     background-color: rgba(151, 112, 69, 1);
@@ -55,4 +104,35 @@
     font-weight: 400;
     color: #373737;
     margin: 10px;
+}
+
+.phoneIcon {
+    display: none;
+}
+
+@media (min-width: 971px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4em;
+    }
+    .yellowline1 {
+        display: none;
+    }
+    .contactContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-bottom: 4em;
+    }
+
+    .yellowline {
+        width: 25em;
+        transform: rotate(90deg);
+    }
+    .phoneIcon {
+        display: initial;
+    }
 }

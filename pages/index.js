@@ -7,9 +7,14 @@ import Footer from '../components/footer'
 import mainImage from '../public/images/toothbrushPhone.jpg'
 import aboutImage from '../public/images/about.jpg'
 import specialistsImage from '../public/images/specialists.jpg'
+import mainImageIpad from '../public/images/mainphoto-ipad.jpg'
+import mainImageDesktop from '../public/images/mainphotodesktop.jpg'
+import mainImageIpadBigger from '../public/images/ipadbigger.png'
 
 
 export default function Home() {
+
+  
 
   const MainPhoto = () => (
     <Image
@@ -17,6 +22,38 @@ export default function Home() {
     src={mainImage}
     alt="main photo"
     layout="responsive"
+    quality={100}
+
+    />
+  )
+  const MainPhoto2 = () => (
+    <Image
+    className='mainPhoto2'
+    src={mainImageIpad}
+    alt="main photo"
+    layout="responsive"
+    quality={100}
+
+    />
+  )
+  const MainPhoto3 = () => (
+    <Image
+    className='mainPhotoIpadBigger'
+    src={mainImageIpadBigger}
+    alt="main photo"
+    layout="responsive"
+    quality={100}
+
+    />
+  )
+
+  const MainPhotoDesktop = () => (
+    <Image
+    className='mainPhotoDesktop'
+    src={mainImageDesktop}
+    alt="main photo"
+    layout="responsive"
+    quality={100}
 
     />
   )
@@ -46,19 +83,37 @@ export default function Home() {
       <main>
         <Header/>
         <div className='mainphoto-wrapper'>
-        <MainPhoto/>
-        </div>
+          <div className='mainphoto-mobile'>
+              <MainPhoto/>
+          </div>
+          <div className='mainphotoIpad'>
+              <MainPhoto2/>
+          </div>
+          <div className='mainphotoIpadBigger'>
+              <MainPhoto3/>
+          </div>
+          <div className='mainphotoDesktop'>
+              <MainPhotoDesktop/>
+          </div>
+        <h1 className='headline'>Við erum teymi sérfræðinga
+sem vinnum saman að þinni 
+tannheilsu</h1>
         <div className='button-container'>
+          <Link href='/about/about' passHref>
           <button className='moreButton' type='button'>Nánar um Apiko</button>
-          <Link href='/posts/appointment' passHref>
+          </Link>
+          <Link href='/appointment/appointment' passHref>
           <button className='bookButton' type='button'>Bóka tíma</button>
           </Link>
+          </div>
         </div>
         <div className='card-container'>
         <h1>Um Apiko</h1>
         <div className='yellowLine'></div>
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</h2>
+        <Link href='/about/about' passHref>
         <button className='readMore-button'>Lesa Nánar</button>
+        </Link>
         <AboutPhoto/>
         </div>
         <div className='specialist-container'>

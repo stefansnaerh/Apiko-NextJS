@@ -9,6 +9,7 @@ export default function Appointment() {
     return (
         <div>
         <Header/>
+        <div className={styles.appointmentWrapper}>
         <section className={styles.appointmentContainer}>
             <h1 className={styles.headline}>Bóka tíma</h1>
             <div className={styles.yellowline}></div>
@@ -31,6 +32,7 @@ export default function Appointment() {
                 eru helstu ástæður tilvísunar?" className={styles.inputBig}></input>
                 <button type="submit" className={styles.sendButton}>Senda</button>
             </form>
+            </div>
             <Footer/>
         </div>
     )

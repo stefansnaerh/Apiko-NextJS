@@ -11,21 +11,40 @@ body {
 
 .mainphoto-wrapper {
     width: 100%;
+    position: relative;
+    display: block;
 }
 
 .mainPhoto{
+position: relative;
 z-index: 0;
 height: 100%;
 width: 100%;
 }
 
+.headline {
+    position: absolute;
+    width: 10rem;
+    z-index: 1;
+    margin-top: -146vw;
+    margin-left: 45vw;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #373737;
+    font-size: 20px;
+}
+
 /*------------- CSS for primary buttons ---------------*/
 
 .button-container{
+position: relative;
+z-index: 1;
 display: flex;
 justify-content: space-evenly;
 flex-direction: row;
+margin-top: -120px;
 }
+
 
 .moreButton {
 background-color: rgba(151, 112, 69, 1);
@@ -35,10 +54,11 @@ border: none;
 color: #ffffff;
 font-family: Poppins;
 font-weight: 500;
-width: 148px;
-height: 36px;
+width: 152px;
+height: 38px;
 font-size: 14px;
 line-height: 18px;
+transition-duration: 0.4s; 
 }
 
 .bookButton {
@@ -49,17 +69,28 @@ border: none;
 color: #ffffff;
 font-family: Poppins;
 font-weight: 500;
-width: 134px;
-height: 36px;
+width: 138px;
+height: 38px;
 font-size: 14px;
 line-height: 18px;
+transition-duration: 0.4s; 
 }
+.bookButton:hover, .moreButton:hover {
+    background-color: #B58F65;
+}
+
+.bookButton:active, .moreButton:active {
+    background-color: #58442f;
+}
+
 
 /*------------- CSS for cards ---------------*/
 
 .card-container {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
+
 }
 
 h1 {
@@ -105,7 +136,17 @@ h2 {
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 30px;
+    transition-duration: 0.4s;
 }
+.readMore-button:hover {
+    background-color: #FFCC7D;
+}
+
+.readMore-button:active {
+    background-color: #C99D58;
+}
+
+
 
 .specialist-container {
     display: flex;
@@ -114,5 +155,69 @@ h2 {
     margin-top: 30px;
     padding-top: 20px;
 }
+
+.mainphotoIpad{
+    display: none;
+    
+}
+.mainphotoIpadBigger {
+    display: none;
+}
+
+.mainphotoDesktop {
+    display: none;
+}
+
+@media (min-width:440px)  {
+    .mainphoto-mobile {
+        display: none;
+    }
+    .mainphotoIpad {
+        display: initial;
+    }
+    .mainphotoDesktop {
+        display: none;
+    }
+
+    .headline {
+        margin-top: -106vw;
+        margin-left: 47vw;
+    }
+    .mainphotoIpadBigger {
+        display: none;
+    }
+}
+
+@media (min-width:640px) {
+    .mainphotoIpadBigger {
+        display: initial;
+    }
+    .mainphotoIpad {
+        display: none;
+    }
+    .mainphotoDesktop {
+        display: none;
+    }
+    .mainphoto-mobile {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1266px) {
+    .mainphotoIpad {
+        display: none;
+    }
+    .mainphotoDesktop {
+        display: initial;
+    }
+    .mainphoto-mobile {
+        display: none;
+    }
+    .mainphotoIpadBigger {
+        display: none;
+    }
+}
+
 
 

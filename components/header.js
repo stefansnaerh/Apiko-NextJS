@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./header.module.css"
+import Link from 'next/link'
 
 export default function Header() {
     const Logo = () => (
@@ -14,11 +15,16 @@ export default function Header() {
 return (
     <header>
         <div className={styles.headerContainer}>
-    <Logo className={styles.logo}/>
+            <Link href='/' passHref>
+    <a><Logo className={styles.logo}/></a>
+    </Link>
     <div className={styles.apikoContainer}>
-    <p className={styles.apiko}>APIKO</p>
-    <p className={styles.apikoSub}>TANNLÆKNASTOFA</p>
+        <Link href='/' passHref>
+            <a><p className={styles.apiko}>APIKO</p>
+    <p className={styles.apikoSub}>TANNLÆKNASTOFA</p></a>
+    </Link>
     </div>
+    
     <div className={styles.navbarContainer}>
         <div className={styles.bar1}></div>
         <div className={styles.bar2}></div>

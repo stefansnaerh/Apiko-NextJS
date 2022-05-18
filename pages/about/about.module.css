@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@200;300;400;500;600&family=Quantico&family=Sen&display=swap');
+
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 8vw;
+}
+
+.headline {
+    font-family: Poppins;
+    color: #373737;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 3px;
+    margin-right: 16vw;
+}
+
+.yellowLine {
+    margin-bottom: 10px;
+    background-color: rgba(235, 180, 94, 1);
+    height: 3px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.maintext {
+    font-family: Poppins;
+    font-weight: 400;
+    color: #373737;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+
+.dentistsButton {
+    background-color: rgba(235, 180, 94, 1);
+    width: 148px;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    width: 148px;
+    height: 36px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 8vw;
+    margin-bottom: 30px;
+    transition-duration: 0.4s;
+}
+.dentistsButton:hover {
+    background-color: #FFCC7D;
+}
+
+.dentistsButton:active {
+    background-color: #C99D58;
+}

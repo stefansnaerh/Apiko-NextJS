@@ -106,3 +106,18 @@
     background-color: #58442f;
 }
 
+@media (min-width: 1025px) {
+    .appointmentWrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .appointmentContainer {
+        width: 50%;
+        margin-top: 2em;
+
+    }
+    .formContainer {
+        width: 50%;
+        margin-top: 7em;
+    }
+}
