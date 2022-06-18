@@ -15,26 +15,22 @@ body {
     display: block;
 }
 
-.mainPhoto{
-position: relative;
-z-index: 0;
-height: 100%;
-width: 100%;
-}
 
 .headline {
     position: absolute;
     width: 10rem;
     z-index: 1;
-    margin-top: -146vw;
+    margin-top: -120vw;
     margin-left: 45vw;
     font-family: Poppins;
     font-weight: 400;
     color: #373737;
     font-size: 20px;
+    text-align: center;
 }
 
 /*------------- CSS for primary buttons ---------------*/
+
 
 .button-container{
 position: relative;
@@ -98,7 +94,7 @@ h1 {
     font-weight: 400;
     color: #373737;
     font-size: 20px;
-    margin-left: 44px;
+    margin-left: 11vw;
     margin-bottom: 0px;
     margin-top: 30px;
 }
@@ -106,9 +102,16 @@ h1 {
 .yellowLine {
     background-color: rgba(235, 180, 94, 1);
     height: 3px;
-    margin-left: 44px;
-    margin-right: 44px;
-    margin-bottom: 10px;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    margin-bottom: 1.5vh;
+}
+.yellowLine2 {
+    background-color: rgba(235, 180, 94, 1);
+    height: 3px;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    margin-bottom: 1.5vh;
 }
 
 h2 {
@@ -116,10 +119,15 @@ h2 {
     font-weight: 400;
     color: #373737;
     font-size: 14px;
-    line-height: 20px;
-    margin-left: 44px;
-    margin-right: 44px;
-    margin-bottom: 24px;
+    line-height: 22px;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    margin-bottom: 4vh;
+}
+
+.textAndButton {
+    display: flex;
+    flex-direction: column;
 }
 
 .readMore-button {
@@ -135,7 +143,7 @@ h2 {
     font-family: Poppins;
     font-weight: 500;
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 7vh;
     transition-duration: 0.4s;
 }
 .readMore-button:hover {
@@ -167,6 +175,23 @@ h2 {
 .mainphotoDesktop {
     display: none;
 }
+ .aboutPhoto850px {
+     display: none;
+ }
+ .aboutPhoto1250px{
+     display: none;
+ }
+ .specialistsPhoto850px {
+     display: none;
+ }
+ .textLine-containerDesktop {
+     display: none;
+ }
+ .specialistsPhoto1250px {
+     display: none;
+ }
+
+/* ---------Media queries for main photo elements --------*/
 
 @media (min-width:440px)  {
     .mainphoto-mobile {
@@ -180,7 +205,7 @@ h2 {
     }
 
     .headline {
-        margin-top: -106vw;
+        margin-top: -85vw;
         margin-left: 47vw;
     }
     .mainphotoIpadBigger {
@@ -188,7 +213,7 @@ h2 {
     }
 }
 
-@media (min-width:640px) {
+@media (min-width:740px) {
     .mainphotoIpadBigger {
         display: initial;
     }
@@ -201,23 +226,164 @@ h2 {
     .mainphoto-mobile {
         display: none;
     }
+    .headlineAndButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headline {
+        margin-right: 27vw;
+        margin-top: -94vw;
+    }
+    .button-container{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 6vw;
+        margin-top: -60vw;
+        padding-left: 21vw;
+        margin-bottom: 59vw;
+        }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 16px;
+    }
 
 }
 
-@media (min-width: 1266px) {
-    .mainphotoIpad {
-        display: none;
-    }
-    .mainphotoDesktop {
-        display: initial;
-    }
-    .mainphoto-mobile {
-        display: none;
-    }
-    .mainphotoIpadBigger {
-        display: none;
-    }
-}
 
 
+/* --------- Media queries for Cards on main page --------*/
+
+
+@media (min-width:740px) {
+    .card-container {
+        margin-top: 1vw;
+    }
+
+    }
+
+    @media (min-width:850px) {
+        .aboutPhotoMobile {
+            display: none;
+        }
+        .specialistsPhotoMobile {
+            display: none;
+        }
+        .aboutPhoto850px {
+            display: initial;
+        }
+        .specialistsPhoto850px{
+            display: initial;
+            padding-left: 11vw;
+        }
+        .textButtonPhoto {
+            display: flex;
+            flex-direction: row;
+            align-items: center;           
+        }
+        .textAndButton {
+            width: 40vw;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        .yellowLine {
+            width: 113px;
+            margin-top: 3px;
+        }
+        .yellowLine2 {
+            width: 260px;
+            margin-top: 3px;
+        }
+        .textLine-container {
+            align-self: center;
+            margin-bottom: 12px;
+        }
+        .specialist-container {
+            height: 595px;
+        }
+       
+    }
+    @media (min-width: 1266px) {
+        .mainphoto-wrapper {
+            margin-bottom: -60vh;
+        }
+        .mainphotoIpad {
+            display: none;
+        }
+        .mainphotoDesktop {
+            display: initial;
+        }
+        .mainphoto-mobile {
+            display: none;
+        }
+        .mainphotoIpadBigger {
+            display: none;
+        }
+        .aboutPhoto850px {
+            display: none;
+        }
+        .aboutPhoto1250px {
+            display: initial;
+        }
+        .specialistsPhoto850px {
+            display: none;
+        }
+        .specialistsPhoto1250px {
+            display: initial;
+            margin-top: 55px;
+            margin-left: 4vw;
+        }
+        .headlineAndButtons {
+           margin-top: 45vw;
+        }
+        .button-container {
+            margin-top: -70vw;
+        }
+        .headline {
+            font-size: 22px;
+            width: 12rem;
+        }
+        .textLine-container {
+            display: none;
+        } 
+        .textLine-containerDesktop {
+            display: initial;
+        }
+        .card-container {
+            margin-top: -54vh;
+            margin-bottom: 8vh;
+        }
+
+    }
+
+    @media (min-width: 1380px) {
+        .card-container {
+            margin-top: -60vh;
+        }
+    }
+    @media (min-width: 1480px) {
+        .card-container {
+            margin-top: -65vh;
+        }
+    }
+    @media (min-width: 1630px) {
+        .card-container {
+            margin-top: -71vh;
+        }
+    }
+    @media (min-width: 1800px) {
+        .card-container {
+            margin-top: -80vh;
+        }
+    }
+    
+    
 

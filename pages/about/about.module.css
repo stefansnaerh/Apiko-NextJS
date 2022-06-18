@@ -10,6 +10,7 @@
 }
 
 .headline {
+    width: 200px;
     font-family: Poppins;
     color: #373737;
     font-size: 20px;
@@ -23,6 +24,13 @@
     background-color: rgba(235, 180, 94, 1);
     height: 3px;
     width: 100%;
+    margin-bottom: 30px;
+}
+.yellowLineTwo {
+    margin-bottom: 10px;
+    background-color: rgba(235, 180, 94, 1);
+    height: 3px;
+    width: 185px;
     margin-bottom: 30px;
 }
 

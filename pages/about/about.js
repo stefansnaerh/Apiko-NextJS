@@ -27,7 +27,7 @@ export default function About() {
             <h2 className={styles.maintext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</h2>
             <button className={styles.dentistsButton}>Tannlæknar</button>
             <h1 className={styles.headline}>Sérfræðingar með víðtæka þekkingu</h1>
-            <div className={styles.yellowLine}></div>
+            <div className={styles.yellowLineTwo}></div>
             <h2 className={styles.maintext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</h2>
             </div>
             <Footer/>

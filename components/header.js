@@ -25,7 +25,7 @@ return (
     </Link>
     </div>
     
-    <div className={styles.navbarContainer}>
+    <div onClick={openNav} className={styles.navbarContainer}>
         <div className={styles.bar1}></div>
         <div className={styles.bar2}></div>
         <div className={styles.bar3}></div>
